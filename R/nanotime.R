@@ -375,7 +375,7 @@ setMethod("+", c("nanotime", "ANY"),
 ##' @export
 setMethod("+", c("nanotime", "period"),
           function(e1, e2) {
-              stop(paste0("binary '+' is not defined for \"nanotime\" and \"period\"",
+              stop(paste0("binary '+' is not defined for \"nanotime\" and \"period\" ",
                           "objects; instead use \"plus(e1, e2, tz)\""))
           })
 
